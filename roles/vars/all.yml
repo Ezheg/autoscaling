@@ -1,0 +1,5 @@
+---
+# path roles/vars/all.yml
+
+region: us-east-2
+key_name: laptop

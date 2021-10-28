@@ -1,0 +1,10 @@
+ec2_lc:
+    name: launch-conf
+    image_id: ami-05cd35b907b4ffe77
+    key_name: {{ key_name }}
+    region: {{ region }}
+    security_groups: sg-testgroup11
+    instance_type: t2.micro
+    assign_public_ip: yes
+
+

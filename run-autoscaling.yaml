@@ -1,0 +1,10 @@
+--- 
+- connection: local
+  gather_facts: "no"
+  hosts: localhost
+  roles: 
+    - role: roles/sg/sg-config
+      
+  #  role: "roles/sg/sg-config.yml"
+   # role: "roles/vpc/vpc-conf.yml"
+    #role: "roles/autoscaling/autoscaling.yml"

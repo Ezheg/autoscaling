@@ -1,0 +1,22 @@
+---
+  amazon.aws.ec2_group:
+    name: sg-testgroup11
+    description: a test EC2 group
+    vpc_id: vpc-test123
+    region: {{ region }}
+   # aws_secret_key: SECRET
+   # aws_access_key: ACCESS
+   # in this case we use key-pair
+    rules:
+      - proto: tcp
+        from_port: 80
+        to_port: 80
+        cidr_ip: 0.0.0.0/0
+      - proto: tcp
+        from_port: 22
+        to_port: 22
+        cidr_ip: 0.0.0.0/0
+      - proto: tcp
+        from_port: 443
+        to_port: 443
+        cidr_ip: 0.0.0.0/0

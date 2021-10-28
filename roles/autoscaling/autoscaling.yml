@@ -1,0 +1,7 @@
+- ec2_asg:
+    name: test-asg
+    launch_config_name: launch-conf
+    min_size: 3
+    max_size: 10
+    desired_capacity: 5
+    region: {{ region }}
